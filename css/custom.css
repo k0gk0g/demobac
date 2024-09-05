@@ -1,0 +1,88 @@
+/* mrp */
+
+:root {
+    --primary: #0A729B;
+    --pasay: #095A82;
+    --mrp-indigo: #6610f2;
+    --mrp-purple: #6f42c1;
+    --mrp-pink: #d63384;
+    --mrp-red: #dc3545;   
+    --enabled: #37B712;
+    --disabled: #BFC2C5;
+    --mrp-white: #FEFEFE;
+    --mrp-gray: #BFC2C5;
+
+    --button-primary: #0A729B;
+    --button-secondary: #095A82;
+    }
+
+body {
+    color: #0D0D0D;
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.btn-primary {
+    color: #FEFEFE;
+    background-color: var(--button-primary);
+    border-color: var(--button-primary);
+}
+.btn-primary:hover {
+    color: #FEFEFE;
+    background-color: var(--button-secondary);
+    border-color: var(--button-secondary);
+}
+
+
+header {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#095a82+0,0a729b+100 */
+background: linear-gradient(to right,  #095a82 0%,#0a729b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+header .logo {
+    max-width: 200px;
+}
+
+.deliverables {
+    display: flex;
+    
+}
+.deliverables > a {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(124,146,155,0.20);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(124,146,155,0.20);
+    box-shadow: 0px 0px 10px 0px rgba(124,146,155,0.20);
+    border-radius: 12px;
+    padding: 15px 25px;
+    flex: 1 1 20%;
+    margin: 1em 0.5em;
+    color: #0A729B;
+    text-decoration: none;
+    border: solid 1px #D2D5D8;
+    background: #F7F8F9;
+}
+.deliverables > a.oneCol {
+    flex: 0 1 23%;
+}
+.deliverables > a:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(124,146,155,0.30);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(124,146,155,0.30);
+    box-shadow: 0px 0px 10px 0px rgba(124,146,155,0.30);
+    border: solid 1px #BFC2C5;
+
+}
+.deliverables p {
+    font-size: 13px;
+    margin-bottom: 0;
+    color: #262A2B;
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .deliverables > a {
+        flex: 1 1 45%;
+    }
+    .deliverables > a.oneCol {
+        flex: 0 1 48%;
+    }
+  }
+
